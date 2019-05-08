@@ -1,0 +1,23 @@
+* {
+    padding:0;
+    margin:0;
+}
+#header {
+    background-image: url('../image/banner.jpg');
+    height: 80vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.nav-link, .navbar-brand {
+    color:#fff !important;
+}
+
+.welcome {
+    padding: 50px 100px;
+    margin-top:-135px;
+    background: white;
+}
+#about .col-md-6 {
+    margin-top:20px;
+}

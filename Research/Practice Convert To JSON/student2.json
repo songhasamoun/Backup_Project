@@ -1,0 +1,12 @@
+[
+    {
+        "Name":"Boom1",
+        "Countdown":"15:00",
+        "Modules":["Wire", "Button", "Symbols"]
+    },
+    {
+        "Name":"Boom2",
+        "Countdown":"20:00",
+        "Modules": ["Wires", "Button", "Max"]
+    }
+]

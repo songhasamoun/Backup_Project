@@ -1,0 +1,22 @@
+* {
+    margin:0;
+    padding:0;
+}
+.title {
+    color:white;
+    margin-left:45%;
+}
+
+body {
+    background-color:tomato;
+}
+
+@media (max-width:560px) {
+    body {
+        background-color:orange;
+    }
+    .title {
+        color:black;
+        margin-left:28%;
+    }
+}

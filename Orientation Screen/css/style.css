@@ -1,0 +1,36 @@
+@media(orientation:landscape) {
+    body{
+        /* background:rgb(76, 7, 204); */
+    }
+    h1:nth-child(3) {
+        display: none;
+    }
+}
+@media(orientation:portrait) {
+    body{
+        /* background:rgb(255, 32, 143); */
+    }
+    h1:nth-child(2) {
+        display: none;
+    }
+}
+@media(min-width:300px){
+    h1 {
+        color:red;
+    }
+}
+@media(min-width:400px){
+    h1 {
+        color:rgb(159, 163, 161);
+    }
+}
+@media(min-width:600px){
+    h1 {
+        color:green;
+    }
+}
+@media(min-width:800px){
+    h1 {
+        color:rgb(255, 239, 91);
+    }
+}

@@ -1,0 +1,36 @@
+* {
+    margin:0;
+    padding: 0;
+}
+.menu-bar {
+    /* background: teal; */
+    background: linear-gradient(to right, teal,green, orange);
+}
+.nav-link, .navbar-brand {
+    color:#fff !important;
+}
+.banner {
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),url('../image/couple.jpg');
+    height: 80vh;
+    background-size: cover;
+    background-position: center;
+}
+.banner h1 {
+    padding-top:140px;
+    font-size:40px;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+}
+.search {
+    background-image: linear-gradient(to right, teal,green, orange);
+    padding:30px 0px;
+    margin:-50px 6% 30px;
+}
+.search .form-control, .search .btn {
+    display:inline-flex;
+    width:280px;
+    box-shadow:none;
+    border-radius: 0;
+    border:none;
+    margin:5px;
+}

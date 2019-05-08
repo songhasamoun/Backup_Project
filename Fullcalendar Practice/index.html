@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Full Callendar</title>
+    <link rel="stylesheet" href="css/fullcalendar.min.css">
+    <link rel="stylesheet" href="css/fullcalendar.print.min.css" media="print">
+    <script src="lib/moment.min.js"></script>
+    <script src="lib/jquery.min.js"></script>
+    <script src="lib/fullcalendar.min.js"></script>
+    <script>
+        $(function() {
+            $('#calendar').fullCalendar({
+                header: {
+                    left: "prev, next, today",
+                    center: "title",
+                    right: "month, agendaWeek, agendaDay"
+                },
+                firstDay: 1,
+                selectable: true,
+                editable:true,
+                navLink:true,
+                selectHelper: true,
+                eventLimit:true,
+                events: [
+                    {
+                        title: "Long",
+                        start: "2019-02-01T07:30:00",
+                        end: "2019-02-01T09:30:00"
+                    }
+                ],
+                select: function(start, end) {
+                    var title = prompt("Event title: ");
+                    function getRandomColor() {
+                        var chars = '0123456789ABCDEF'.split('');
+                        var hex = '#';
+                        for (var i = 0; i < 6; i++) {
+                            hex += chars[Math.floor(Math.random() * 16)];
+                        }
+                        return hex;
+                    }
+                    var eventData;
+                    if(title) {
+                        eventData = {
+                            title: title,
+                            start: start,
+                            end: end,
+                            color: getRandomColor()
+                        };
+                    $('#calendar').fullCalendar('renderEvent', eventData, true);
+                    };
+                $('#calendar').fullCalendar(unselect);
+                }
+            });
+        });
+    </script>
+</head>
+<body>
+    <div id="calendar"></div>
+</body>
+</html>

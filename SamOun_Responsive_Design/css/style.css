@@ -1,0 +1,49 @@
+* {
+    margin:0;
+    padding: 0;
+}
+.menu-bar {
+    /* background: teal; */
+    background: linear-gradient(to right, rgba(56, 187, 226, 0.945), rgb(21, 207, 114));
+}
+.nav-link, .navbar-brand {
+    color:#fff !important;
+}
+.banner {
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),url('../image/banner.jpg');
+    height: 80vh;
+    background-size: cover;
+    background-position: center;
+}
+.banner h1 {
+    padding-top:180px;
+    font-size:40px;
+    letter-spacing: 10px;
+}
+.search {
+    background: linear-gradient(to right, rgba(29, 127, 240, 0.945), rgb(21, 207, 114));
+    padding:30px 0px;
+    margin:-50px 6% 30px;
+}
+.search .form-control, .search .btn {
+    display:inline-flex;
+    width:250px;
+    box-shadow:none;
+    border-radius: 0;
+    border:none;
+    margin:5px;
+}
+.search .btn {
+    width:100px;
+    margin-top:-1.5px;
+}
+
+#leaf {
+    position: absolute;
+    top:117vh;
+    left:42%;
+    width:48px;
+    height:30px;
+    background: linear-gradient(to right, rgba(29, 127, 240, 0.545), rgb(21, 207, 114));    
+    border-radius: 50% 0;
+}
